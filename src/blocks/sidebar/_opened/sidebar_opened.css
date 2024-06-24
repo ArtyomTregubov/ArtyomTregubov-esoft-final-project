@@ -1,0 +1,31 @@
+.sidebar_opened {
+    height: 100%;
+    width: 310px;
+    position: fixed;
+    z-index: 1;
+    top: 1px;
+    left: 65.95%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.93;
+}
+
+@media screen and (max-width: 695px) {
+    .sidebar_opened {
+        left: 55.95%;
+    }
+  }
+
+  @media screen and (max-width: 531px) {
+    .sidebar_opened {
+        left: 41.95%;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    .sidebar_opened {
+        left: -0.05%;
+        width: 410px;
+    }
+  }

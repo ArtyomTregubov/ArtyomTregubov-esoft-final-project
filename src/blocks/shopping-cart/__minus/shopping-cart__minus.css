@@ -1,0 +1,12 @@
+.shopping-cart__minus {
+    border: 0;
+    padding: 0;
+    width: 30px;
+    border-left: 1px solid;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+.shopping-cart__minus:active {
+    transform: scale(0.97);
+}

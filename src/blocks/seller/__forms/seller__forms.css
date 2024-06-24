@@ -1,0 +1,5 @@
+.seller__forms {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

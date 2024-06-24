@@ -1,0 +1,8 @@
+.sidebar__navigation-link-text {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 2;
+}

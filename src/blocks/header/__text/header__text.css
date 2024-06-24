@@ -1,0 +1,15 @@
+.header__text {
+    margin: 0 0 0 67px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    line-height: 24px;
+    color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    .header__text {
+        font-size: 13px;
+        margin: 0 0 0 20px;
+    }
+  }

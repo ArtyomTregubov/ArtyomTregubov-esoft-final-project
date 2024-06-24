@@ -1,0 +1,20 @@
+.shopping-cart__paid {
+    margin: 56px 0 0;
+    width: 93%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+@media screen and (max-width: 715px) {
+    .shopping-cart__paid {
+        justify-content: center;
+    }
+  }
+
+@media screen and (max-width: 440px) {
+    .shopping-cart__paid {
+        font-size: 20px;
+    }
+  }

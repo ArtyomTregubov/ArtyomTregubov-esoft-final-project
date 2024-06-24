@@ -1,0 +1,11 @@
+.sneakers-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px) {
+    .sneakers-info {
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,7 @@
+.news__element {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: min(70%, 420px);
+    position: relative;
+}

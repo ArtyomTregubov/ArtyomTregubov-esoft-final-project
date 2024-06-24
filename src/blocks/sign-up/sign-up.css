@@ -1,0 +1,7 @@
+.sign-up {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px;
+    flex-direction: column;
+    background-color: #000;
+}

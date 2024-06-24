@@ -1,0 +1,12 @@
+.shopping-cart__title {
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 29px;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 440px) {
+    .shopping-cart__title {
+        font-size: 22px;
+    }
+  }

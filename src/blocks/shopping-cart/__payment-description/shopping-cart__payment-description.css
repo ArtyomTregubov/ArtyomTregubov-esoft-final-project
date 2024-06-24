@@ -1,0 +1,18 @@
+.shopping-cart__payment-description {
+    margin: 0 10px 0 0;
+    font-family: 'Montserrat';
+    font-size: 12px;
+
+}
+
+@media screen and (max-width: 700px) {
+    .shopping-cart__payment-description {
+        font-size: 9px;
+    }
+  }
+
+  @media screen and (max-width: 525px) {
+    .shopping-cart__payment-description {
+        margin: 0 10px 5px;
+    }
+  }

@@ -1,0 +1,17 @@
+.account__favourites-title {
+    display: flex;
+    padding: 0 0 0 70px;
+    margin: 0;
+    font-family: 'SourseSans3';
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #181823;
+    color: #fff;
+}
+
+@media screen and (max-width: 580px) {
+    .account__favourites-title {
+        padding: 0;
+        justify-content: center;
+    }
+  }

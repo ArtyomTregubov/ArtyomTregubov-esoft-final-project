@@ -1,0 +1,14 @@
+.seller-chat__user {
+    width: 272px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: #343a3a;
+}
+
+.seller-chat__user:active {
+    transform: scale(0.99);
+}

@@ -1,0 +1,10 @@
+.sneakers-info__purchase {
+    border: 0;
+    padding: 0;
+    height: 50px;
+    font-family: 'SourseSans3';
+    margin: 0 0 50px;
+    background-color: #ff4d00eb;
+    border-radius: 10px;
+    color: #fff;
+}

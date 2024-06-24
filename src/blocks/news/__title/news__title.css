@@ -1,0 +1,9 @@
+.news__title {
+    padding: 0 0 0 70px;
+    display: flex;
+    font-family: 'SourseSans3';
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #181823;
+    color: #fff;
+}

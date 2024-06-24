@@ -1,0 +1,6 @@
+.seller-chat__user-message {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin: 10px 0 10px 0;
+}

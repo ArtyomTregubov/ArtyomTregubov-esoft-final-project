@@ -1,0 +1,9 @@
+.header__navigation-list {
+    width: 585px;
+    height: 88px;
+    margin: 0 60px 0 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: row-reverse;
+    list-style: none;
+}

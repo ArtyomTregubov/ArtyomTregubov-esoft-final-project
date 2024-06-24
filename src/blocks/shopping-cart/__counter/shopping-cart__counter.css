@@ -1,0 +1,8 @@
+.shopping-cart__counter {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 29px;
+    border: 1px solid;
+    margin: 5px 0 0;
+}

@@ -1,0 +1,22 @@
+.shopping-cart__pay {
+    padding: 0;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #fdcaca;
+    color: #dc4949;
+}
+
+.shopping-cart__pay:active {
+    transform: scale(0.97);
+}
+
+@media screen and (max-width: 440px) {
+    .shopping-cart__pay {
+        font-size: 14px;
+    }
+  }

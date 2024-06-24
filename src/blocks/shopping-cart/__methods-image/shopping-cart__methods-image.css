@@ -1,0 +1,10 @@
+.shopping-cart__methods-image {
+    width: 65px;
+}
+
+@media screen and (max-width: 700px) {
+    .shopping-cart__methods-image {
+        width: 50px;
+    }
+  }
+  

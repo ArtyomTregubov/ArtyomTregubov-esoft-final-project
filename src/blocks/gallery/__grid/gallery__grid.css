@@ -1,0 +1,8 @@
+.gallery__grid {
+    padding: 44px 0;
+    width: min(100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+    grid-gap: 20px 17px;
+    justify-items: center;
+  }

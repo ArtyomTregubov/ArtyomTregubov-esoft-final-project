@@ -1,0 +1,5 @@
+.seller-chat__container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 310px;
+}

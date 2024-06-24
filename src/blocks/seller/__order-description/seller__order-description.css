@@ -1,0 +1,5 @@
+.seller__order-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

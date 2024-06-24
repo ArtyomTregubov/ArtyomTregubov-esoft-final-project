@@ -1,0 +1,14 @@
+.sneakers__title {
+    color: #fff;
+    margin: 100px 0 0 70px;
+    font-family: 'Snickers Normal';
+    font-size: 130px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 640px) {
+    .sneakers__title {
+        margin: 100px 0 0;
+        font-size: 77px;
+    }
+  }

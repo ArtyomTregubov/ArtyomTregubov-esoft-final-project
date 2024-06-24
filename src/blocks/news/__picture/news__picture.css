@@ -1,0 +1,5 @@
+.news__picture {
+    width: min(100%, 420px);
+    height: 242px;
+    object-fit: cover;
+}

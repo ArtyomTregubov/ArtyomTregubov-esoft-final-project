@@ -1,0 +1,11 @@
+.gallery__favorites {
+    width: 220px;
+    height: 38px;
+    border: 1px #5221E6 solid;
+    border-radius: 10px;
+    padding: 0;
+    margin: 7px 0 0;
+    font-family:'SourseSans3';
+    background-color: #fff;
+    color: #5221E6;
+}

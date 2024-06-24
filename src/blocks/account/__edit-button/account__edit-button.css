@@ -1,0 +1,21 @@
+.account__edit-button {
+    border: 0;
+    padding: 0;
+    width: 177px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #5221E6;
+    font-family: 'SourseSans3';
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.account__edit-button:hover {
+    opacity: 0.8;
+}
+
+.account__edit-button:active {
+    transform: scale(0.95);
+}

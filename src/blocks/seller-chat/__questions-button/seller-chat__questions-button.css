@@ -1,0 +1,17 @@
+.seller-chat__questions-button {    
+    padding: 0 7px;
+    width: 100px;
+    border: 1px solid #b1c3d8;
+    background-size: cover;
+    background-color: #5954bc;
+    color: #b1c3d8;
+    font-size: 20px;
+}
+
+.seller-chat__questions-button:hover {
+    opacity: 0.9;
+}
+
+.seller-chat__questions-button:active {
+    transform: scale(0.97);
+}

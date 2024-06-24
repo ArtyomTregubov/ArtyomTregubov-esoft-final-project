@@ -1,0 +1,9 @@
+.shopping-cart__element {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    border: 1px solid;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+

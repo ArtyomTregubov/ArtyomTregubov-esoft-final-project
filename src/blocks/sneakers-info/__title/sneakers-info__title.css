@@ -1,0 +1,16 @@
+.sneakers-info__title {
+    display: flex;
+    padding: 0 70px 0 70px;
+    margin: 0;
+    font-family: 'SourseSans3';
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #181823;
+    color: #fff;
+}
+
+@media screen and (max-width: 430px) {
+    .sneakers-info__title {
+        font-size: 33px;
+    }
+  }

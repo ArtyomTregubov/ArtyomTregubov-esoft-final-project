@@ -1,0 +1,6 @@
+.seller__account {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: 1px solid;
+}

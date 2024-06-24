@@ -1,0 +1,10 @@
+.shopping-cart__name {
+    font-family: 'Montserrat';
+    margin: 0 0 4px;
+}
+
+@media screen and (max-width: 333px) {
+    .shopping-cart__name {
+        font-size: 13px;
+    }
+  }

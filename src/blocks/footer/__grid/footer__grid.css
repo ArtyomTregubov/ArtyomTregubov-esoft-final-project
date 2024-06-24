@@ -1,0 +1,17 @@
+.footer__grid {
+    width: min(53%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px 17px;
+    justify-items: center;
+    margin: 45px 0 0;
+}
+
+@media screen and (max-width: 700px) {
+    .footer__grid {
+      width: min(100%);
+      margin: 0;
+      padding: 50px 0 0;
+      justify-items: center;
+    }
+  }

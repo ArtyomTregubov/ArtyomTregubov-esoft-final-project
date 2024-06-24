@@ -1,0 +1,30 @@
+.header__burger {
+    display: none;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .header__burger {
+        display: block;
+        width: 64px;
+        height: 64px;
+        background-image: url(../../../../public/images/burger_icon.png);
+        margin: 0 50px 0 0;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .header__burger:active {
+        transform: scale(0.95);
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .header__burger {
+        width: 40px;
+        height: 40px;
+        margin: 0 20px 0 0;
+        background-size: cover;
+    }
+  }

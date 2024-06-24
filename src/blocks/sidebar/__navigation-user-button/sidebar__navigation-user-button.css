@@ -1,0 +1,8 @@
+.sidebar__navigation-user-button {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 0;
+    background-image: url(../../../../public/images/user_icon.svg);
+    background-color: transparent;
+}

@@ -1,0 +1,28 @@
+.question {
+    width: 110px;
+    height: 110px;
+    position: fixed;
+    right: 4%;
+    top: 85%;
+    border: 0;
+    padding: 0;
+    background-image: url(../../../public/images/question_icon.png);
+    background-color: transparent;
+    background-size: contain;
+}
+
+.question:hover {
+    opacity: 0.8;
+}
+
+.question:active {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 550px) {
+    .question {
+        width: 60px;
+        height: 55px;
+        right: 0;
+    }
+  }

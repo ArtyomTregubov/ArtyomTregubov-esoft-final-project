@@ -1,0 +1,6 @@
+.sneakers {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    background-color: #000;
+}

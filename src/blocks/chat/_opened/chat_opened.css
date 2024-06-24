@@ -1,0 +1,15 @@
+.chat_opened {
+    height: 460px;
+    width: 310px;
+    position: fixed;
+    z-index: 1;
+    top: 175px;
+    left: 70.95%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.93;
+    border-radius: 15px;
+}

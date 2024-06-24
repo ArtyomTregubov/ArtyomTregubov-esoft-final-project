@@ -1,0 +1,7 @@
+.seller__orders-grid {
+    width: min(80%);
+    display: grid;
+    grid-gap: 5px;
+    justify-items: start;
+    margin: 50px 0 50px;
+}

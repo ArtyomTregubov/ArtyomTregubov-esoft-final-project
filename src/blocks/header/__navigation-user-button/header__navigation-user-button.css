@@ -1,0 +1,16 @@
+.header__navigation-user-button {
+    background-image: url(../../../../public/images/user_icon.svg);
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+    width: 30px;
+    height: 29px;
+}
+
+.header__navigation-user-button:hover {
+    opacity: 0.8;
+}
+
+.header__navigation-user-button:active {
+    transform: scale(0.95);
+}

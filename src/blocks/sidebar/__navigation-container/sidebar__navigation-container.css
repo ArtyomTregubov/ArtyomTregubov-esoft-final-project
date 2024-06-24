@@ -1,0 +1,6 @@
+.sidebar__navigation-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 10px 44px;
+    max-width: 74px;
+}

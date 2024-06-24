@@ -1,0 +1,9 @@
+.brands__grid-button {
+    background-color: #000;
+    padding: 0;
+    border: 0;
+}
+
+.brands__grid-button:active {
+    transform: scale(0.95);
+}

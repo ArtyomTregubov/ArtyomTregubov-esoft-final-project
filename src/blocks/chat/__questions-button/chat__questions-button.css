@@ -1,0 +1,18 @@
+.chat__questions-button {    
+    padding: 0 5px;
+    width: 100px;
+    border: 1px solid #b1c3d8;
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    background-color: #5954bc;
+    color: #b1c3d8;
+    font-size: 20px;
+}
+
+.chat__questions-button:hover {
+    opacity: 0.9;
+}
+
+.chat__questions-button:active {
+    transform: scale(0.97);
+}

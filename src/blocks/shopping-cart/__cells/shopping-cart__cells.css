@@ -1,0 +1,7 @@
+.shopping-cart__cells {
+    width: min(63%);
+    display: grid;
+    grid-gap: 5px;
+    justify-items: start;
+    margin: 10px 0 0;
+}

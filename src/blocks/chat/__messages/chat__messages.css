@@ -1,0 +1,17 @@
+.chat__messages {
+    display: flex;
+    overflow: scroll;
+    height: 335px;
+    background-color: #202825;
+    flex-direction: column-reverse;
+}
+
+.chat__messages::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+}
+
+.chat__messages::-webkit-scrollbar-thumb {
+    background-color: #464646;
+    border-radius: 3pxpx;
+}

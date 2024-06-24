@@ -1,0 +1,17 @@
+.gallary__more-button {
+    width: 33%;
+    height: 50px;
+    margin: 80px 0 75px;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: #5221E6;
+    color: #fff;
+    font-family: 'SourseSans3';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gallary__more-button:active {
+    transform: scale(0.99);
+}

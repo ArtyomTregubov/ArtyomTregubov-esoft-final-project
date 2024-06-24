@@ -1,0 +1,10 @@
+.seller__add_form {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 7px;
+    margin: 0 0 50px;
+    background-color: #e1e1ff;;
+}

@@ -1,0 +1,13 @@
+.gallery__buy {
+    width: 220px;
+    height: 46px;
+    border: 0;
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-family:'SourseSans3';
+    background-color: rgb(212, 75, 56);
+}
+
+.gallary__buy:active {
+    transform: scale(0.95);
+}

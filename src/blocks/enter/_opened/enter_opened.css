@@ -1,0 +1,21 @@
+.enter_opened {
+    height: 140px;
+    width: 23%;
+    position: absolute;
+    z-index: 1;
+    top: 92px;
+    left: 69.95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.93;
+}
+
+@media screen and (max-width: 900px) {
+    .enter_opened {
+        display: none;
+    }
+  }

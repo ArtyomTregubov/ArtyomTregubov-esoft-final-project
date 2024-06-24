@@ -1,0 +1,12 @@
+.account__favourites {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 74px;
+    margin: 0 0 0 40px;
+}
+
+@media screen and (max-width: 980px) {
+    .account__favourites {
+        margin: 0;
+    }
+  }

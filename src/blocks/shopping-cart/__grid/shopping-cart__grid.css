@@ -1,0 +1,14 @@
+.shopping-cart__grid {
+    width: min(100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    grid-gap: 20px 17px;
+    justify-items: center;
+    margin: 37px 0 0;
+}
+
+@media screen and (max-width: 440px) {
+    .shopping-cart__grid {
+        grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+    }
+  }

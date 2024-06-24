@@ -1,0 +1,9 @@
+.shopping-cart__icon {
+    width: 38px;
+}
+
+@media screen and (max-width: 440px) {
+    .shopping-cart__icon {
+        width: 30px;
+    }
+  }

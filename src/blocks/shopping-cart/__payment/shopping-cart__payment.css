@@ -1,0 +1,12 @@
+.shopping-cart__payment {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0 50px;
+    width: 93%;
+}
+
+@media screen and (max-width: 715px) {
+    .shopping-cart__payment {
+        align-items: center;
+    }
+  }
