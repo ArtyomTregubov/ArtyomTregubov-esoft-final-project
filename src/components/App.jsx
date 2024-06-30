@@ -4,6 +4,7 @@ import Sneakers from "./Sneakers";
 import Brands from "./Brands";
 import Gallery from "./Gallery";
 import News from "./News";
+import CommentsBlock from "./CommentsBlock";
 import Footer from "./Footer";
 import Question from "./Question";
 import Chat from "./Chat";
@@ -67,7 +68,7 @@ function App() {
               }>   
               </Route>
 
-              <Route path="/usser" element={
+              <Route path="/user" element={
                 <>
                   <Header
                     isShow={isShow}
@@ -101,6 +102,8 @@ function App() {
                 <Header
                   isShow={isShow}
                   onShow={onShow}
+                  showEnter={showEnter}
+                  onShowEnter={onShowEnter}
                 />
                 <main>
                     <Question
@@ -139,6 +142,7 @@ function App() {
                     <Brands/>    
                     <Gallery/>
                     <News/>
+                    <CommentsBlock/>
                     <Question
                     showChat={showChat}
                     onShowChat={onShowChat}

@@ -1,0 +1,4 @@
+.comments__user-description {
+    display: flex;
+    flex-direction: column;
+}

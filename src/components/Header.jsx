@@ -30,6 +30,9 @@ export default function Header({isShow, onShow, showEnter, onShowEnter}) {
                 <li className="header__navigation-link">
                     <Link to="/cart" className="header__navigation-link-icon" href="#">
                         <img src="./images/backboard_icon.svg" alt="Иконка корзины покупателя" className="header__avatar-icon" />
+                        <div className="header__cart-indicator">
+                            <span className="header__indicator-number">2</span>
+                        </div>
                     </Link>    
                 </li>
 

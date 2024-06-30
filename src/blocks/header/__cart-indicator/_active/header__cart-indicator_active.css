@@ -1,0 +1,14 @@
+.header__cart-indicator_active {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 54%;
+    top: 14%;
+    display: flex;
+    border-radius: 50%;
+    background-color: #fe5d05;
+    background-size: contain;
+    justify-content: center;
+    color: #f9f8f8;
+    font-family: 'SourseSans3';
+}

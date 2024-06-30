@@ -1,6 +1,9 @@
 .sneakers__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
-    margin: 15px 0 0 75px;
+    margin: 15px 0 0 39px;
     font-family: 'Montserrat';
     font-size: 31px;
     font-weight: 400;
@@ -11,7 +14,7 @@
     .sneakers__subtitle {
         display: flex;
         justify-content: center;
-        width: 70%;
+        width: 100%;
         margin: 15px 0 0;
         font-size: 19px;
     }

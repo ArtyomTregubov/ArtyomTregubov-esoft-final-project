@@ -4,7 +4,10 @@
     border: 0;
     border-radius: 10px;
     padding: 4px 6px;
-    font-family:'SourseSans3';
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
     background-color: rgb(212, 75, 56);
 }
 

@@ -12,6 +12,8 @@
 @import url(../src/blocks/header/__navigation-link/header__navigation-link.css);
 @import url(../src/blocks/header/__navigation-user-button/header__navigation-user-button.css);
 @import url(../src/blocks/header/__navigation-link-icon/header__navigation-link-icon.css);
+@import url(../src/blocks/header/__cart-indicator/header__cart-indicator.css);
+@import url(../src/blocks/header/__cart-indicator/_active/header__cart-indicator_active.css);
 @import url(../src/blocks/header/__navigation-link-text/header__navigation-link-text.css);
 @import url(../src/blocks/sneakers/sneakers.css);
 @import url(../src/blocks/sneakers/__image/sneakers__image.css);
@@ -21,6 +23,8 @@
 @import url(../src/blocks/brands/brands.css);
 @import url(../src/blocks/brands/__grid/brands__grid.css);
 @import url(../src/blocks/brands/__grid-button/brands__grid-button.css);
+@import url(../src/blocks/brands/__all/brands__all.css);
+@import url(../src/blocks/brands/__all-brands/brands__all-brands.css);
 @import url(../src/blocks/gallery/gallery.css);
 @import url(../src/blocks/gallery/__grid/gallery__grid.css);
 @import url(../src/blocks/gallery/__grid-favourites/gallery__grid-favourites.css);
@@ -39,6 +43,17 @@
 @import url(../src/blocks/news/__picture/news__picture.css);
 @import url(../src/blocks/news/__text/news__text.css);
 @import url(../src/blocks/news/__link/news__link.css);
+@import url(../src/blocks/comments/comments.css);
+@import url(../src/blocks/comments/__title/comments__title.css);
+@import url(../src/blocks/comments/__form/comments__form.css);
+@import url(../src/blocks/comments/__entering/comments__entering.css);
+@import url(../src/blocks/comments/__button/comments__button.css);
+@import url(../src/blocks/comments/__container/comments__container.css);
+@import url(../src/blocks/comments/__user/comments__user.css);
+@import url(../src/blocks/comments/__user-icon/comments__user-icon.css);
+@import url(../src/blocks/comments/__user-description/comments__user-description.css);
+@import url(../src/blocks/comments/__date/comments__date.css);
+@import url(../src/blocks/comments/__text/comments__text.css);
 @import url(../src/blocks/footer/footer.css);
 @import url(../src/blocks/footer/__container/footer__container.css);
 @import url(../src/blocks/footer/__box/footer__box.css);

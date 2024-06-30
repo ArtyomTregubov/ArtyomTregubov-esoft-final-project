@@ -1,0 +1,10 @@
+.comments__title {
+    height: 50px;
+    display: flex;
+    margin: 40px 0 26px;
+    padding: 0 0 0 70px;
+    background-color: #181823;
+    font-family: 'SourseSans3';
+    font-size: 40px;
+    color: #fff;
+}

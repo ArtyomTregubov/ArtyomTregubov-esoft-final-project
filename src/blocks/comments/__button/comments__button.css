@@ -1,0 +1,16 @@
+.comments__button {
+    border: 0;
+    padding: 0;
+    margin: 5px 0 0 0;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(212, 75, 56);
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    color: #fff;
+    cursor: pointer;
+}
+
+.comments__button:active {
+    transform: scale(0.99);
+}
