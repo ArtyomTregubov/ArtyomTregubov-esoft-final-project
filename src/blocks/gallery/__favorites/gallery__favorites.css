@@ -9,3 +9,7 @@
     background-color: #fff;
     color: #5221E6;
 }
+
+.gallary__favorites:active {
+    transform: scale(0.99);
+}

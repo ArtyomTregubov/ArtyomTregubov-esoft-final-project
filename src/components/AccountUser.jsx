@@ -1,9 +1,15 @@
 import React from "react";
 import AccountUserDataForm from "./AccountUserDataForm";
-import GalleryCard from "./GalleryCard";
+import CardFavourites from "./CardFavourites";
 import PurchasesCard from "./PurchasesCard";
+import useStore from "../stores/store";
 
 export default function AccountUsser() {
+
+    const sneakers = useStore((state) => state.sneakers);
+    const favorites = useStore((state) => state.favorites);
+    
+
     return (
                 <section className="account">
                     <div className="account__profile">
@@ -17,11 +23,19 @@ export default function AccountUsser() {
                         <div className="account__favourites">
                             <h2 className="account__favourites-title">Избранное</h2>
 
-                            <div className="gallery__grid gallery__grid-favourites">
+                            <div className="account__grid-favourites">
 
-                            <GalleryCard/>
-                            <GalleryCard/>
-                            <GalleryCard/>
+                        { 
+                            favorites.map((card) => {
+
+                                return (
+
+                                        <CardFavourites
+                                            card={card}
+                                        />
+                                )
+                            })
+                        }
 
                             </div>
                         </div>
@@ -29,11 +43,20 @@ export default function AccountUsser() {
                         <div className="account__favourites account__purchases">
                             <h2 className="account__favourites-title account__purchases-title">Покупки</h2>
 
-                            <div className="gallery__grid gallery__grid-favourites">
+                            <div className="account__grid-favourites">
 
-                                <PurchasesCard/>
-                                <PurchasesCard/>
-                                <PurchasesCard/>                                
+                            { 
+                                sneakers.map((card) => {
+
+                                    return (
+
+                                            <PurchasesCard
+                                                card={card}
+                                            />
+                                 
+                                    )
+                                })
+                            }                             
 
                             </div>
                         </div>

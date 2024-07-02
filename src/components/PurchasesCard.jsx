@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function PurchasesCard() {
+export default function PurchasesCard({card}) {
     return (
-            <article className="gallery__element">
-                <img className="gallery__picture" src="./images/Jordan Air Jordan 1 Mid Lakers.jpg" alt="Jordan Air Jordan 1 Mid Lakers"/>
-                <div className="gallery__info">
-                    <span className="gallery__prise">21990&#8381;</span>
-                    <h2 className="gallery__title">Air Jordan 1 Mid Lakers</h2>
-                </div>
-            </article>
+        <article className="account__element-favourites" key={card.id}>
+        <img className="account__picture-favourites" src={card.src} alt={card.alt}/>
+        <div className="account__info-favourites">
+            <span className="account__prise-favourites">{card.prise}&#8381;</span>
+            <Link to="/info" className="account__title-favourites">{card.title}</Link>
+        </div>
+    </article>
 )}

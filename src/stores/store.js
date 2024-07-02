@@ -97,6 +97,13 @@ const sneakersDefault = [
 const useStore = create(set => ({
     sneakers: [...sneakersDefault],
 
+    favorites: [],
+
+     addFavorite: (card) =>
+       set((state) => ({
+         favorites: [...state.favorites, card],
+       })),
+
     addCard: (card) =>
         set((state) => ({
          sneakers: [

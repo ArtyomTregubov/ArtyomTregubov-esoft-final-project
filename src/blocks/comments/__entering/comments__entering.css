@@ -1,5 +1,6 @@
 .comments__entering {
-    background-color: #dbdde2;
+    max-width: 80%;
+    background-color: #fff;
     padding: 5px;
     border-radius: 7px;
     font-family: 'Montserrat';

@@ -13,7 +13,7 @@ export default function Gallery() {
   };
 
   return (
-    <section className="gallery">
+    <section className="gallery" id="galleryID">
 
         <div className="gallery__grid">
 

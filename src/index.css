@@ -88,7 +88,14 @@
 @import url(../src/blocks/account/__cards/account__cards.css);
 @import url(../src/blocks/account/__favourites/account__favourites.css);
 @import url(../src/blocks/account/__favourites-title/account__favourites-title.css);
-@import url(../src/blocks/account/__purchases/account__purchases.css);
+@import url(../src/blocks/account/__favourites-title/account__favourites-title.css);
+@import url(../src/blocks/account/__grid-favourites/account__grid-favourites.css);
+@import url(../src/blocks/account/__element-favourites/account__element-favourites.css);
+@import url(../src/blocks/account/__picture-favourites/account__picture-favourites.css);
+@import url(../src/blocks/account/__info-favourites/account__info-favourites.css);
+@import url(../src/blocks/account/__prise-favourites/account__prise-favourites.css);
+@import url(../src/blocks/account/__title-favourites/account__title-favourites.css);
+@import url(../src/blocks/account/__buy-favourites/account__buy-favourites.css);
 @import url(../src/blocks/sneakers-info/sneakers-info.css);
 @import url(../src/blocks/sneakers-info/__picture/sneakers-info__picture.css);
 @import url(../src/blocks/sneakers-info/__container/sneakers-info__container.css);

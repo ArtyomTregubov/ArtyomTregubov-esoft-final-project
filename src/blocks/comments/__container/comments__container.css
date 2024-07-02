@@ -1,9 +1,9 @@
 .comments__container {
     display: flex;
     flex-direction: column;
-    width: 880px;
+    width: 70%;
     margin: 15px 0 0 50px;
-    background-color: #dbdde2;
+    background-color: #fff;
     padding: 10px;
     border: 1px solid #8d8f90;
     border-radius: 7px;

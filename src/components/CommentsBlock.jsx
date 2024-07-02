@@ -9,7 +9,7 @@ export default function CommentsBlock() {
 
   return (
 
-    <div className="comments">
+    <div className="comments" id="commentsID">
         <h2 className="comments__title">Отзывы</h2>
     
         <CommentsForm/>

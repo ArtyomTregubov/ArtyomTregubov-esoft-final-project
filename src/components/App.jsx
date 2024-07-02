@@ -30,6 +30,13 @@ function App() {
   const [showChat, onShowChat] = useState(false);
   const [showSellerChat, onShowSellerChat] = useState(false);
 
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
 
     
@@ -45,6 +52,9 @@ function App() {
                   <Header
                     isShow={isShow}
                     onShow={onShow}
+                    showEnter={showEnter}
+                    onShowEnter={onShowEnter}
+                    scrollToElement={scrollToElement}
                   />
                   <main>
                       <SideBar
@@ -53,7 +63,9 @@ function App() {
                         showEnterAuth={showEnterAuth}
                         onShowEnterAuth={onShowEnterAuth}
                       />
-                      <AccountSeller/>
+                      <AccountSeller
+                      
+                      />
                       <SellerQuestionButton
                         showSellerChat={showSellerChat}
                         onShowSellerChat={onShowSellerChat}
@@ -63,7 +75,9 @@ function App() {
                         onShowSellerChat={onShowSellerChat}
                       />
                   </main>
-                  <Footer/>
+                  <Footer
+                    scrollToElement={scrollToElement}
+                  />
                 </>
               }>   
               </Route>
@@ -71,8 +85,11 @@ function App() {
               <Route path="/user" element={
                 <>
                   <Header
+                    scrollToElement={scrollToElement}
                     isShow={isShow}
                     onShow={onShow}
+                    showEnter={showEnter}
+                    onShowEnter={onShowEnter}
                   />
                   <main>
                       <Question
@@ -92,7 +109,9 @@ function App() {
                       />
                       <EnterAccount/>
                   </main>
-                  <Footer/>
+                  <Footer
+                    scrollToElement={scrollToElement}
+                  />
                 </>
               }>   
               </Route>
@@ -100,6 +119,7 @@ function App() {
             <Route path="/cart" element={
               <>
                 <Header
+                  scrollToElement={scrollToElement}
                   isShow={isShow}
                   onShow={onShow}
                   showEnter={showEnter}
@@ -122,7 +142,9 @@ function App() {
                     />
                     <ShopingCart/>
                 </main>
-                <Footer/>
+                <Footer
+                  scrollToElement={scrollToElement}
+                />
               </>
             }>   
             </Route>
@@ -132,6 +154,7 @@ function App() {
             <Route path="/" element={
               <>
                 <Header
+                  scrollToElement={scrollToElement}
                   isShow={isShow}
                   onShow={onShow}
                   showEnter={showEnter}
@@ -163,7 +186,9 @@ function App() {
                     />
                     <EnterAccount/>
                 </main>
-                <Footer/>
+                <Footer
+                  scrollToElement={scrollToElement}
+                />
               </>
             }>   
             </Route>
@@ -171,6 +196,9 @@ function App() {
             <Route path="/info" element={
               <>
                 <Header
+                  scrollToElement={scrollToElement}
+                  showEnter={showEnter}
+                  onShowEnter={onShowEnter}
                   isShow={isShow}
                   onShow={onShow}
                 />
@@ -191,7 +219,9 @@ function App() {
                       onShowEnterAuth={onShowEnterAuth}
                     />
                 </main>
-                <Footer/>
+                <Footer
+                  scrollToElement={scrollToElement}
+                />
               </>
             }>   
             </Route>

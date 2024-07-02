@@ -1,0 +1,6 @@
+.account__picture-favourites {
+    width: min(100%, 150px);
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }

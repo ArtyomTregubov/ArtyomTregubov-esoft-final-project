@@ -7,7 +7,7 @@ export default function News() {
     const news = useNewsStore((state) => state.news);
 
     return (
-            <section className="news">
+            <section className="news" id="newsID">
                 <h2 className="news__title">Новости</h2>
                 <div className="news__grid">
 

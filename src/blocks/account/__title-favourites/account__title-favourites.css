@@ -1,0 +1,10 @@
+.account__title-favourites {
+    margin: 0 0 15px;
+    color: black;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 1.2;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 13px;
+}

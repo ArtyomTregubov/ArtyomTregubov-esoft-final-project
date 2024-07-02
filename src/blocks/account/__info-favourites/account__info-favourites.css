@@ -1,0 +1,6 @@
+.account__info-favourites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80px;
+}

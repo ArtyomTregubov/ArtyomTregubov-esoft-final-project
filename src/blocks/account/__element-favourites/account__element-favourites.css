@@ -1,0 +1,8 @@
+.account__element-favourites {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 282px);
+    position: relative;
+}

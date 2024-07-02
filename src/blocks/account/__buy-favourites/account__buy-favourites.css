@@ -1,0 +1,16 @@
+.account__buy-favourites {
+    width: 110px;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(212, 75, 56);
+}
+
+.account__buy-favourites:active {
+    transform: scale(0.95);
+}
