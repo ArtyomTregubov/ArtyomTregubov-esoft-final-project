@@ -1,0 +1,13 @@
+.seller__download-button {
+    background-image: url(../../../../public/images/download_icon.png);
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.seller__download-button:active {
+    transform: scale(0.95);
+}

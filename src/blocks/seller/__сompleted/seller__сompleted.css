@@ -2,6 +2,9 @@
     border: 0;
     padding: 10px;
     background-color: #ffc5a6;
-    border-radius: 5px;
     width: 151px;
+}
+
+.seller__сompleted:active {
+    transform: scale(0.95);
 }

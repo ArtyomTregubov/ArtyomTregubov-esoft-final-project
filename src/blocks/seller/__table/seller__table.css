@@ -1,0 +1,18 @@
+.seller__table {
+    width: 1150px;
+    max-height: 330px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    overflow: scroll;
+}
+
+.seller__table::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+}
+
+.seller__table::-webkit-scrollbar-thumb {
+    background-color: #777474;
+    border-radius: 3px;
+}

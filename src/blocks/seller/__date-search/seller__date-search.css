@@ -1,0 +1,6 @@
+.seller__date-search {
+    margin: 10px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}

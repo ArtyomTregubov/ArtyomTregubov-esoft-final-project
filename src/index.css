@@ -126,6 +126,7 @@
 @import url(../src/blocks/shopping-cart/__image/shopping-cart__image.css);
 @import url(../src/blocks/shopping-cart/__box/shopping-cart__box.css);
 @import url(../src/blocks/shopping-cart/__name/shopping-cart__name.css);
+@import url(../src/blocks/shopping-cart/__size/shopping-cart__size.css);
 @import url(../src/blocks/shopping-cart/__price/shopping-cart__price.css);
 @import url(../src/blocks/shopping-cart/__close-button/shopping-cart__close-button.css);
 @import url(../src/blocks/shopping-cart/__close-icon/shopping-cart__close-icon.css);
@@ -177,6 +178,18 @@
 @import url(../src/blocks/seller/__form-input/seller__form-input.css);
 @import url(../src/blocks/seller/__add-button/__add-button.css);
 @import url(../src/blocks/seller/__analitics/seller__analitics.css);
+@import url(../src/blocks/seller/__date-search/seller__date-search.css);
+@import url(../src/blocks/seller/__date-from/seller__date-from.css);
+@import url(../src/blocks/seller/__date-to/seller__date-to.css);
+@import url(../src/blocks/seller/__table/seller__table.css);
+@import url(../src/blocks/seller/__table-container/seller__table-container.css);
+@import url(../src/blocks/seller/__table-cell/seller__table-cell.css);
+@import url(../src/blocks/seller/__cell-data/seller__cell-data.css);
+@import url(../src/blocks/seller/__analitics-result/seller__analitics-result.css);
+@import url(../src/blocks/seller/__profit/seller__profit.css);
+@import url(../src/blocks/seller/__table-buttons/seller__table-buttons.css);
+@import url(../src/blocks/seller/__download-button/seller__download-button.css);
+@import url(../src/blocks/seller/__print-button/seller__print-button.css);
 @import url(../src/blocks/seller-chat/seller-chat.css);
 @import url(../src/blocks/seller-chat/_opened/seller-chat_opened.css);
 @import url(../src/blocks/seller-chat/__close-button/seller-chat__close-button.css);

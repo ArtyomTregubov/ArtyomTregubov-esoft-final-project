@@ -101,7 +101,16 @@ const useStore = create(set => ({
 
      addFavorite: (card) =>
        set((state) => ({
-         favorites: [...state.favorites, card],
+         favorites: [
+        { 
+            id: card, 
+            src: card.src, 
+            alt: card.alt, 
+            prise: card.prise, 
+            title: card.title,
+            description: card.description
+         },
+         ...state.favorites],
        })),
 
     addCard: (card) =>

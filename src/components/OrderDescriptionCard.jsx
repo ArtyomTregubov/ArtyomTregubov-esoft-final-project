@@ -6,7 +6,7 @@ export default function OrderDescriptionCard() {
                     <div className="seller__order-description">
                         <span className="seller__order-number">Заказ № 2708</span>
                         <span className="seller__order-date">от 14 Июня</span>
-                        <span className="seller__order-status">Новый</span>
+                        <span className="seller__order-status">Текущий</span>
                         <span className="seller__order-status-info">14 Июня в 13:20</span>
                     </div>
                     <div className="seller__order-info">

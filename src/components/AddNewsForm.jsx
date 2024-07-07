@@ -50,7 +50,7 @@ export default function AddNewsForm() {
     return (
                 <form action="#" name="add-form" className="seller__add_form" noValidate>
 
-                    <fieldset className="seller__add-imglink">
+                    <fieldset className="seller__add-link">
                         <input 
                         type="text" 
                         name="form-question" 
@@ -65,7 +65,7 @@ export default function AddNewsForm() {
                         <span className="study__input-error" id="name-error"></span>
                     </fieldset>
 
-                    <fieldset className="seller__add-newslink">
+                    <fieldset className="seller__add-link">
                         <input 
                         type="text" 
                         name="form-question" 

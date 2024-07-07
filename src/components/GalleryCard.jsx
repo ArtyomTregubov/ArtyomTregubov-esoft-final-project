@@ -12,7 +12,9 @@ export default function GalleryCard({card}) {
             <div className="gallery__info">
                 <span className="gallery__prise">{card.prise}&#8381;</span>
                 <Link to="/info" className="gallery__title">{card.title}</Link>
-                <button className="gallery__buy" type="button">Купить</button>
+                <Link to="/info">
+                    <button className="gallery__buy" type="button">Купить</button>
+                </Link>
                 <button onClick={() => addFavorite(card)} className="gallery__favorites" type="button">Добавить в избранное</button>
             </div>
         </article>

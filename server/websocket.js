@@ -11,9 +11,11 @@ wss.on('connection', function connection(ws) {
         switch (message.event) {
             case 'message':
                 broadcastMessage(message)
+                console.log('message', message)
                 break;
             case 'connection':
                 broadcastMessage(message)
+                console.log('connection',message)
                 break;
         }
     })
@@ -23,6 +25,7 @@ wss.on('connection', function connection(ws) {
 function broadcastMessage(message) {
     wss.clients.forEach(client => {
         client.send(JSON.stringify(message))
+        console.log('broadcastMessage', message)
     })
 }
 
@@ -30,10 +33,10 @@ function broadcastMessage(message) {
 
 
 
-const message = {
-    event: 'message/connection',
-    id: 123,
-    date: '30.06.2026',
-    ussername: 'Том Харди',
-    message: 'Хей гайз'
-}
+// const message = {
+//     event: 'message/connection',
+//     id: 123,
+//     date: '30.06.2026',
+//     ussername: 'Том Харди',
+//     message: 'Хей гайз'
+// }

@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 const useUsersStore = create(set => ({
     users: [
         {
-            id: 111,
+            id: 1,
             src: "/images/profile_image.jpg", 
             alt: "иконка пользователя",
             name: "Артём",
@@ -14,7 +14,7 @@ const useUsersStore = create(set => ({
         },
 
         {
-            id: 222,
+            id: 2,
             src: "https://i.pinimg.com/736x/b6/96/75/b69675e00b298a81012ef56860a37b12.jpg", 
             alt: "иконка пользователя",
             name: "Том",

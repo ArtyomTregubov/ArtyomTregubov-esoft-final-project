@@ -3,5 +3,8 @@
     padding: 10px;
     background-color: #a6ffb4;
     width: 151px;
-    border-radius: 5px;
+}
+
+.seller__current:active {
+    transform: scale(0.95);
 }

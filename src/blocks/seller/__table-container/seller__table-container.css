@@ -1,0 +1,5 @@
+.seller__table-container {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+}

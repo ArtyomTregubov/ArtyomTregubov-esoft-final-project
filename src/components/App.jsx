@@ -62,6 +62,7 @@ function App() {
                         onShow={onShow}
                         showEnterAuth={showEnterAuth}
                         onShowEnterAuth={onShowEnterAuth}
+                        scrollToElement={scrollToElement}
                       />
                       <AccountSeller
                       
@@ -106,6 +107,7 @@ function App() {
                       onShow={onShow}
                       showEnterAuth={showEnterAuth}
                       onShowEnterAuth={onShowEnterAuth}
+                      scrollToElement={scrollToElement}
                       />
                       <EnterAccount/>
                   </main>
@@ -139,6 +141,7 @@ function App() {
                       onShow={onShow}
                       showEnterAuth={showEnterAuth}
                       onShowEnterAuth={onShowEnterAuth}
+                      scrollToElement={scrollToElement}
                     />
                     <ShopingCart/>
                 </main>
@@ -183,6 +186,7 @@ function App() {
                       onShow={onShow}
                       showEnterAuth={showEnterAuth}
                       onShowEnterAuth={onShowEnterAuth}
+                      scrollToElement={scrollToElement}
                     />
                     <EnterAccount/>
                 </main>
@@ -217,6 +221,7 @@ function App() {
                       onShow={onShow}
                       showEnterAuth={showEnterAuth}
                       onShowEnterAuth={onShowEnterAuth}
+                      scrollToElement={scrollToElement}
                     />
                 </main>
                 <Footer

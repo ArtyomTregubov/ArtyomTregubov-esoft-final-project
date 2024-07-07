@@ -1,0 +1,7 @@
+.seller__cell-data {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

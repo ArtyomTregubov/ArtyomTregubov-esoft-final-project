@@ -68,7 +68,7 @@ export default function Header({
                 </li>  
 
                 <li className="header__navigation-link">
-                <Link to="/" className="header__navigation-link-text" href="#">Главная</Link>
+                <Link to="/" className="header__navigation-link-text">Главная</Link>
                 </li> 
 
             </ul>

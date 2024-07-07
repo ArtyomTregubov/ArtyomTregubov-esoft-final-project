@@ -4,15 +4,56 @@ import useChatsStore from "../stores/chatsStore";
 
 export default function Chat({showChat, onShowChat}) {
 
-    const messages = useChatsStore((state) => state.messages);
-    const addMessage = useChatsStore((state) => state.addMessage);
+    const [messages, setMessages] = useState([{
+        userId: 1,
+        message: "Юзер 1 Артем пишет",
+        id: 1,
+        event: "message",
+        chatId: 1,
+    },
+    {
+        userId: undefined,
+        message: "Продавец отвечает",
+        id: 2,
+        event: "message",
+        chatId: 1,
+    },
+    {
+        userId: 2,
+        message: "Юзер 2 Том Харди пишет",
+        id: 3,
+        event: "message",
+        chatId: 2,
+    },
+    {
+        userId: undefined,
+        message: "Продавец отвечает",
+        id: 4,
+        event: "message",
+        chatId: 2,
+    },
+    {
+        userId: 1,
+        message: "Юзер 1 Артем пишет",
+        id: 5,
+        event: "message",
+        chatId: 1,
+    },
+    {
+        userId: 1,
+        message: "Юзер 1 Артем пишет",
+        id: 6,
+        event: "message",
+        chatId: 1,
+    }]);
+     messages.sort((mes1, mes2) => mes2.id - mes1.id)
+    const [value, setValue] = useState('');
+    const [connected, setConnected] = useState(false);
 
     function handleCloseUserChat() {
         onShowChat(false);
     }
 
-
-    const [value, setValue] = useState('');
     const socket = useRef()
 
     useEffect(() => {
@@ -20,11 +61,11 @@ export default function Chat({showChat, onShowChat}) {
 
 
         socket.current.onopen = () => {
-            
+            setConnected(true)
         }
         socket.current.onmessage = (e) => {
             const message = JSON.parse(e.data)
-            //addMessage(prev => [message, ...prev])
+            setMessages(prev => [message, ...prev])
         }
         socket.current.onclose = () => {
             
@@ -39,19 +80,20 @@ export default function Chat({showChat, onShowChat}) {
 
     const sendMessage = async () => {
         const message = {
-            user_id: uuidv4(),
+            userId: uuidv4(),
             message: value,
             id: uuidv4(),
-            event: 'message'
+            event: 'message',
         }
-        addMessage({
-            user_id: undefined,
-            message: value,
-            id: uuidv4(),
-            event: 'message'
-        })
+        message.chatId = message.userId
         socket.current.send(JSON.stringify(message));
         setValue('')
+    }
+
+    if (!connected) {
+        return (<section className={ showChat ? `chat_opened` : `chat`}>
+            Нет соединения с сервером
+        </section>)
     }
 
     return (
@@ -75,7 +117,8 @@ export default function Chat({showChat, onShowChat}) {
 
                         { 
                             messages.map((mess) => {
-                                const classNameChat = "chat__user-message" ? mess.user_id : "seller-chat__seller-message";
+                                debugger
+                                const classNameChat = mess.userId ? "chat__user-message" : "seller-chat__seller-message";
                                 return (
                                             <div className={classNameChat}>
                                                 <img src="./images/user_message_icon.svg" alt="иконка пользователя" className="chat__user-icon"/>

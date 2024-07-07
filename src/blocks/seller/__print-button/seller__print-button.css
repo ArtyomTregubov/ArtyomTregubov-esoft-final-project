@@ -1,0 +1,13 @@
+.seller__print-button {
+    background-image: url(../../../../public/images/print_icon.png);
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.seller__print-button:active {
+    transform: scale(0.95);
+}

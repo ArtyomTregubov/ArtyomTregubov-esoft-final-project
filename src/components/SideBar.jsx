@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function SideBar({isShow, onShow, showEnterAuth, onShowEnterAuth}) {
+export default function SideBar({isShow, 
+                                 onShow, 
+                                 showEnterAuth, 
+                                 onShowEnterAuth, 
+                                 scrollToElement}) {
 
       function handleCloseSideBarClick() {
         onShow(false);
@@ -23,6 +27,9 @@ export default function SideBar({isShow, onShow, showEnterAuth, onShowEnterAuth}
 
                             <Link to="./cart" className="sidebar__navigation-link-icon">
                                 <img src="./images/backboard_icon.svg" alt="Иконка корзины покупателя" className="header__avatar-icon" />
+                                <div className="header__cart-indicator_active">
+                                    <span className="header__indicator-number">2</span>
+                                </div>
                             </Link>   
 
                         </div>
@@ -36,23 +43,31 @@ export default function SideBar({isShow, onShow, showEnterAuth, onShowEnterAuth}
                         <ul className="sidebar__navigation-list">
         
                             <li className="sidebar__navigation-link">
-                                <a className="sidebar__navigation-link-text" href="#">Каталог</a>
+                                <Link className="sidebar__navigation-link-text" 
+                                      to="#gallery"
+                                      onClick={() => scrollToElement('galleryID')}
+                                      >Каталог</Link>
                             </li>
         
                             <li className="sidebar__navigation-link">
-                                <a className="sidebar__navigation-link-text" href="#">Новинки</a>
+                                <Link className="sidebar__navigation-link-text" 
+                                   href="#news" 
+                                   onClick={() => scrollToElement('newsID')}
+                                   >Новости</Link>
                             </li>
         
                             <li className="sidebar__navigation-link">
-                                <a className="sidebar__navigation-link-text" href="#">Акции</a>
+                                <Link className="sidebar__navigation-link-text" 
+                                   href="#comments" 
+                                   onClick={() => scrollToElement('commentsID')}>Отзывы</Link>
                             </li>
         
                             <li className="sidebar__navigation-link">
-                                <a className="sidebar__navigation-link-text" href="#">Оплата и доставка</a>
+                                <Link className="sidebar__navigation-link-text" to="#">Оплата и доставка</Link>
                             </li>  
         
                             <li className="sidebar__navigation-link">
-                                <a className="sidebar__navigation-link-text" href="#">Гарантия</a>
+                                <Link to="/" className="sidebar__navigation-link-text" href="#">Главная</Link>
                             </li> 
         
                         </ul>
