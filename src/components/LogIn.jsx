@@ -35,7 +35,7 @@ export default function LogIn() {
                         <span className="sign-up__input-error" id="link-error"></span>
                         </fieldset>
                         <button className="sign-up__save-button" type="submit">
-                        Сохранить
+                        Войти
                         </button>
                     </form>
                         <Link to="/auth" className="sign-up__link">Регстрация</Link>

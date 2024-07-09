@@ -16,7 +16,6 @@ export default function Gallery() {
     <section className="gallery" id="galleryID">
 
         <div className="gallery__grid">
-
             
 
             {
@@ -30,8 +29,7 @@ export default function Gallery() {
                         )
                     })
                 }
-
-            
+  
         </div>
 
         <button onClick={handleShowMore} className="gallary__more-button">Ещё</button>

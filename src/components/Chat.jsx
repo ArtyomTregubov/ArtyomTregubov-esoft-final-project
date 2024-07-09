@@ -90,6 +90,12 @@ export default function Chat({showChat, onShowChat}) {
         setValue('')
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            sendMessage();
+        }
+    };
+
     if (!connected) {
         return (<section className={ showChat ? `chat_opened` : `chat`}>
             Нет соединения с сервером
@@ -110,7 +116,7 @@ export default function Chat({showChat, onShowChat}) {
                         name="message"
                         type="text"
                     > Задайте ваш вопрос...</textarea>
-                    <input onClick={sendMessage} className="chat__questions-button" type="button" value="SEND"/>
+                    <input onClick={sendMessage} onKeyDown={handleKeyDown} className="chat__questions-button" type="button" value="SEND"/>
                 </form>
 
                     <div className="chat__messages">

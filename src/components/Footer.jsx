@@ -7,7 +7,7 @@ export default function Footer({scrollToElement}) {
                 <div className="footer__container">
                     <div className="footer__box">
                         <Link to="/">
-                            <img className="footer__logo" src="./images/sneakers_logo.png" alt="Логотип магазина кроссовок"/>
+                            <img className="footer__logo" src="/images/sneakers_logo.png" alt="Логотип магазина кроссовок"/>
                         </Link>
                         <span className="footer__logo-text">магазин кроссовок</span>
                     </div>
@@ -39,10 +39,10 @@ export default function Footer({scrollToElement}) {
 
                         <article className="footer__element">
                             <Link className="footer__link" to="#">
-                                <img className="footer__link-logo" src="./images/vk_logo.png" alt="Логотип Вконтакте"/>
+                                <img className="footer__link-logo" src="/images/vk_logo.png" alt="Логотип Вконтакте"/>
                             </Link>
                             <Link className="footer__link" to="#">
-                                <img className="footer__link-logo" src="./images/telegramm_logo.png" alt="Логотип Телеграмм"/>
+                                <img className="footer__link-logo" src="/images/telegramm_logo.png" alt="Логотип Телеграмм"/>
                             </Link>
                          </article>
 

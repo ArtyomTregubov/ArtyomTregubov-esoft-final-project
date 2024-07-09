@@ -197,7 +197,7 @@ function App() {
             }>   
             </Route>
  
-            <Route path="/info" element={
+            <Route path="/info/:id" element={
               <>
                 <Header
                   scrollToElement={scrollToElement}

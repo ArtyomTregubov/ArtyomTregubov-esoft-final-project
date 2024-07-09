@@ -1,36 +1,65 @@
 import React from "react";
-import SizeCard from "./SizeCard";
+import useSizeStore from "../stores/sizesStore";
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
+import useBasketStore from "../stores/basketStore";
 
 export default function SneakersInfo() {
+
+    const [isSelectedSize, setIsSelectedSize] = useState(false);
+    const [selectedSize, setSelectedSize] = useState(43)
+
+    function handleSelectSize(size) {
+        setIsSelectedSize(!isSelectedSize);
+        setSelectedSize(size)
+    }
+
+    const sizes  = useSizeStore((state) => state.sizes);
+    const addBasketCard = useBasketStore((state) => state.addBasketCard);
+    const {state} = useLocation();
+
+    const handleAddBasketCard = () => {
+        addBasketCard({
+            id: state.card.id,
+            name: state.card.title,
+            src: state.card.src,
+            alt: state.card.alt,
+            size: selectedSize,
+            price: state.card.price,
+
+        })
+    }
+
+
     return (
                 <section className="sneakers-info">
-                    <div className="sneakers-info__picture"></div>
+                    <img src={state.card.src} alt={state.card.alt} className="sneakers-info__picture"/>
                         <div className="sneakers-info__container">
-                            <h2 className="sneakers-info__title">Air Jordan 1 Mid Lakers</h2>
-                            <p className="sneakers-info__description">
-                                Легендарный дизайн в яркой расцветке баскетбольного клуба 
-                                Los Angeles Lakers. Кроссовки Jordan 1 Mid созданы из смеси 
-                                натуральной и искусственной кожи, чтобы подчеркнуть структурность 
-                                и повысить износостойкость пары. Не слишком высокий силуэт 
-                                позволяет стилизовать модель с любимыми аутфитами. Воздушная подушка 
-                                Air-Sole обеспечивает легкость и отличную амортизацию. Акцентный колорблок
-                                создает неповторимый стиль и выделяет кроссовки из всей коллекции.</p>
-                            <span className="sneakers-info__price">21990 РУБ</span>
+                            <h2 className="sneakers-info__title">{state.card.title}</h2>
+                            <p className="sneakers-info__description">{state.card.description}</p>
+                            <span className="sneakers-info__price">{state.card.price}</span>
                             <div className="sneakers-info__grid">
 
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
-                                <SizeCard/>
+                                {
+                                sizes.map((size, i)=>{ 
+
+                                    return (
+
+                                        <article className="sneakers-info__element" key={i} >
+                                            <button className={ isSelectedSize ? `sneakers-info__size_selected` : `sneakers-info__size`}
+                                            onClick={()=>handleSelectSize(size.size)}
+                                            >{size.size}</button>
+                                        </article>
+                                        
+                                    )
+                                })
+                            }
 
                         </div>
-                        <button className="sneakers-info__purchase">Оформить покупку</button>
+                        <button 
+                        className="sneakers-info__purchase"
+                        onClick={handleAddBasketCard}
+                        >Оформить покупку</button>
                     </div>
                 </section>
 )}

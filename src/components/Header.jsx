@@ -23,7 +23,7 @@ export default function Header({
     <header className="header">
         <div className="header__container">
             <Link to="/">
-                <img src="./images/sneakers_logo.png" alt="Логотип магазина кроссовок" className="header__logo"/>
+                <img src="/images/sneakers_logo.png" alt="Логотип магазина кроссовок" className="header__logo"/>
             </Link>    
             <span className="header__text">Магазин кроссовок</span>
         </div>
@@ -32,13 +32,13 @@ export default function Header({
 
                 <li className="header__navigation-link">
                     <button onClick={handleShowEnterAccountClick} className="header__navigation-user-button">
-                        <img src="./images/user_icon.svg" alt="Иконка пользователя" className="header__avatar-icon" />
+                        <img src="/images/user_icon.svg" alt="Иконка пользователя" className="header__avatar-icon" />
                     </button>
                 </li>
 
                 <li className="header__navigation-link">
                     <Link to="/cart" className="header__navigation-link-icon">
-                        <img src="./images/backboard_icon.svg" alt="Иконка корзины покупателя" className="header__avatar-icon" />
+                        <img src="/images/backboard_icon.svg" alt="Иконка корзины покупателя" className="header__avatar-icon" />
                         <div className="header__cart-indicator">
                             <span className="header__indicator-number">2</span>
                         </div>

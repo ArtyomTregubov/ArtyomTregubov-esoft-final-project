@@ -35,7 +35,7 @@ const useCommentsStore = create(set => ({
             alt: comment.alt, 
             name: comment.name,
             surname: comment.surname,
-            date: comment.date,
+            date: new Date().toLocaleDateString(),
             text: comment.text
          },
           ...state.comments,
